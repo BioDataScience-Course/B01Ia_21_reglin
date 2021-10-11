@@ -2,11 +2,23 @@
 
 ## Avant-propos
 
-Cette séance d'exercices est en cours de développement. N'hésitez pas à vérifier le lien suivant afin de voir les modifications dans les consignes : https://github.com/BioDataScience-Course/sdd2_module01
+Les consignes reprises dans ce document, ainsi que dans les différents fichiers sont susceptibles d'évoluer. N'hésitez pas à vérifier le lien suivant afin de voir si des modifications n'y ont pas été apportées : <https://github.com/BioDataScience-Course/B01Ia_21_reglin>
+
+Ce projet nécessite d'avoir assimilé l'ensemble des notions du premier module du cours de Science des données biologiques 2.
 
 ## Objectifs
 
-Ce projet est un projet **court** et **cadré**. Ce dernier doit être terminé pour la fin de ce module. Ce projet indivuduel est côté.
+Ce projet est un projet  individuel **court** et **cadré**. Ce dernier doit être terminé pour la fin de ce premier module. 
+
+Ce projet vous permet de :
+
+- visualiser et décrire des données 
+- calculer des nouvelles
+- réaliser et décrire un modèle
+- déterminer l'équation du modèle
+- utiliser l'analyse des résidus afin de décrire ce modèle
+
+## Consignes
 
 - Au sein du fichier `reglin.Rmd`, complétez les zones manquantes. Ce fichier se trouve dans le dossier `docs`.
 

@@ -1,9 +1,16 @@
 ---
 title: "La régression linéaire"
 author: '....'
-date: "...."
-output: html_document
+date: '....'
+output:
+  pdf_document: default
+  html_document: default
 ---
+
+
+<!--# Cette balise est un commentaire.-->
+
+<!--% Cette balise est une consigne.-->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -11,71 +18,104 @@ SciViews::R
 ```
 
 
-# Objectif
+# Introduction
 
-Ce document s'intéresse à la réalisation et l'interprétation de la régression linéaire.
+Ce document s'intéresse à la modélisation de la variation de l'indice de masse corporelle en fonction de l'âge des individus.
 
 # Analyse
 
-> Importez les données `biometry` du package `BioDataScience`. Utilisez la page d'aide pour en apprendre d'avantage sur ces données. Commentez ces données sur base de l'aide de la page d'aide en maximum 2 lignes.
+<!--% Importez les données `biometry` du package `BioDataScience`. Utilisez la page d'aide pour en apprendre davantage sur ces données.-->
 
 ```{r read}
-bio <- read("...", package = "...")
+bio <- read("___", package = "___")
 ```
 
-> Calculez la variable `bmi` qui est l'indice de masse corporelle (IMC) avec la fonction `mutate()`. Ajoutez également un label et des unités à cette nouvelle variable avec la fonction `labelise()`
+## Description des données
 
+<!--% Calculez la variable `bmi` qui est l'indice de masse corporelle (IMC) avec la fonction `mutate().` -->
 
 ```{r mutate}
 
 ```
 
-> Réalisez un nuage de points de la variable bmi en fonction de la variable age. Utilisez la fonction `chart()` et la fonction `geom_point()`. Commentez ce graphique en maximum 4 lignes. 
+<!--% Ajoutez un label et des unités à cette nouvelle variable avec la fonction `labelise()` -->
+
+```{r labelise}
+
+```
+
+<!--% Réalisez un nuage de points de la variable bmi en fonction de la variable age. -->
 
 ```{r plot}
 
 ```
 
-> Utilisez la fonction `lm()` afin de calculer la regression linéaire de la variable `bmi` en fonction de la variable `age`. 
+<!--% Décrivez le graphique ci-dessus en 3 à 4 phrases.-->
+
+
+<!--% Proposez deux graphiques ou tableaux supplémentaires. Décrivez-les en 3 à 4 phrases.-->
+
+```{r plot1}
+
+```
+
+```{r plot2}
+
+```
+
+## Modélisation de l'IMC 
+
+<!--% Utilisez la fonction `lm()` afin de calculer la régression linéaire de la variable `bmi` en fonction de la variable `age`-->
 
 ```{r lm}
-
+lm. <- 
 ```
 
-> Ecrivez l'equation mathématique de ce modèle. Utilisez la syntaxe spécifique à latex avec les balises `$`.
+<--% Écrivez l'équation mathématique de ce modèle en utilisant la syntaxe Latex. -->
 
 $$equation...$$
-
-> Réalisez un résumé avec la fonction `summary()` de votre objet lm réalisé précédement et commentez ce dernier en maximum 5 lignes.
+<!--% Proposez un résumé avec la fonction `summary()` de votre objet `lm.`.-->
 
 ```{r summary}
-summary()
-```
-
-> Utilisez les outils de diagnostiques sur votre modèle. Réalisez l'analyse des résidus. Réalisez le premier graphique de l'analyse des résidus et commentez ce graphique en maximum 3 lignes.
-
-```{r diag1}
 
 ```
 
-> Réalisez le second graphique de l'analyse des résidus et commentez ce graphique en maximum 3 lignes.
+<!--% Décrivez le résultat du résumé de l'objet `lm.` en 5 à 6 phrases. Soyez complet ! -->
 
-```{r diag2}
+
+<!--% Étudiez la distribution homogène des résidus de votre modèle.-->
+
+```{r resid1}
 
 ```
 
-> Réalisez le 3ième graphique de l'analyse des résidus et commentez ce graphique en maximum 3 lignes.
+<!--% Décrivez ce graphique. Soyez complet !-->
+
+<!--% Vérifiez la normalité des résidus de votre modèle.-->
+
+```{r resid 2}
+
+```
+
+<!--% Décrivez ce graphique. Soyez complet !-->
+
+<!--% Étudiez la distribution des résidus standardisés.-->
+
+```{r resid3}
+
+```
+
+<!--% Décrivez ce graphique. Soyez complet !-->
+
+<!--% Étudiez l’influence des individus sur la régression linéaire grâce à l'indice de Cook. -->
 
 ```{r diag3}
 
 ```
 
+<!--% Décrivez ce graphique. Soyez complet !-->
 
-> Réalisez le 4ième graphique de l'analyse des résidus et commentez ce graphique en maximum 3 lignes.
+## Conclusion
 
-```{r diag4}
-
-```
-
-> Selon vous, est ce que modèle représente correctement vos données. Répondez en maximum 4 lignes. 
+<!--% Selon vous, est-ce que ce modèle représente correctement vos données. Répondez en 4 à 6 lignes. Énoncez éventuellement des pistes d'amélioration du modèle. --> 
 
