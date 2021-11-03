@@ -20,6 +20,4 @@ Ce projet vous permet de :
 
 ## Consignes
 
-- Au sein du fichier `reglin.Rmd`, complétez les zones manquantes. Ce fichier se trouve dans le dossier `docs`.
-
-
+- Au sein du fichier `docs/reglin.Rmd`, complétez les zones manquantes.

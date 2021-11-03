@@ -8,9 +8,9 @@ output:
 ---
 
 
-<!--# Cette balise est un commentaire.-->
+<!--# Cette balise est un commentaire. -->
 
-<!--% Cette balise est une consigne.-->
+<!--% Cette balise est une consigne. Ne jamais modifier ni déplacer les consignes dans le document! -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -18,11 +18,13 @@ SciViews::R
 ```
 
 
-# Introduction
+## Introduction et but
 
-Ce document s'intéresse à la modélisation de la variation de l'indice de masse corporelle en fonction de l'âge des individus.
+<!--# Introduction et but ont été réduits à leur plus simple expression en une seule phrase, mais normalement cette section est plus détaillée (ce n'est pas le but de l'exercice ici) ! -->
 
-# Analyse
+Ce document s'intéresse à la modélisation de la variation de l'indice de masse corporelle (IMC) en fonction de l'âge des individus.
+
+## Résultats
 
 <!--% Importez les données `biometry` du package `BioDataScience`. Utilisez la page d'aide pour en apprendre davantage sur ces données.-->
 
@@ -30,7 +32,7 @@ Ce document s'intéresse à la modélisation de la variation de l'indice de mass
 bio <- read("___", package = "___")
 ```
 
-## Description des données
+### Description des données
 
 <!--% Calculez la variable `bmi` qui est l'indice de masse corporelle (IMC) avec la fonction `mutate().` -->
 
@@ -44,7 +46,7 @@ bio <- read("___", package = "___")
 
 ```
 
-<!--% Réalisez un nuage de points de la variable bmi en fonction de la variable age. -->
+<!--% Réalisez un nuage de points de la variable `bmi` en fonction de la variable `age`. -->
 
 ```{r plot}
 
@@ -59,22 +61,26 @@ bio <- read("___", package = "___")
 
 ```
 
+
+
 ```{r plot2}
 
 ```
 
-## Modélisation de l'IMC 
 
-<!--% Utilisez la fonction `lm()` afin de calculer la régression linéaire de la variable `bmi` en fonction de la variable `age`-->
+
+### Modélisation de l'IMC
+
+<!--% Utilisez la fonction `lm()` afin de calculer la régression linéaire de la variable `bmi` en fonction de la variable `age` et placez le résultat dans une variable `lm.`. -->
 
 ```{r lm}
-lm. <- 
+lm. <- ___
 ```
 
-<--% Écrivez l'équation mathématique de ce modèle en utilisant la syntaxe Latex. -->
+<!--% Écrivez l'équation mathématique de ce modèle (paramétriqation du modèle) en utilisant la syntaxe LaTeX ci-dessous. -->
 
-$$equation...$$
-<!--% Proposez un résumé avec la fonction `summary()` de votre objet `lm.`.-->
+$$___equation___$$
+<!--% Proposez un résumé de votre modèle avec la fonction `summary()` appliquée sur votre objet `lm.`.-->
 
 ```{r summary}
 
@@ -83,39 +89,43 @@ $$equation...$$
 <!--% Décrivez le résultat du résumé de l'objet `lm.` en 5 à 6 phrases. Soyez complet ! -->
 
 
-<!--% Étudiez la distribution homogène des résidus de votre modèle.-->
+<!--% Étudiez la distribution homogène des résidus de votre modèle. -->
 
 ```{r resid1}
 
 ```
 
-<!--% Décrivez ce graphique. Soyez complet !-->
+<!--% Décrivez ce graphique. Soyez complet ! -->
 
-<!--% Vérifiez la normalité des résidus de votre modèle.-->
+
+<!--% Vérifiez la normalité des résidus de votre modèle. -->
 
 ```{r resid 2}
 
 ```
 
-<!--% Décrivez ce graphique. Soyez complet !-->
+<!--% Décrivez ce graphique. Soyez complet ! -->
 
-<!--% Étudiez la distribution des résidus standardisés.-->
+
+<!--% Étudiez la distribution des résidus standardisés. -->
 
 ```{r resid3}
 
 ```
 
-<!--% Décrivez ce graphique. Soyez complet !-->
+<!--% Décrivez ce graphique. Soyez complet ! -->
 
-<!--% Étudiez l’influence des individus sur la régression linéaire grâce à l'indice de Cook. -->
+
+<!--% Étudiez l’influence des individus sur la régression linéaire grâce à la distance de Cook. -->
 
 ```{r diag3}
 
 ```
 
-<!--% Décrivez ce graphique. Soyez complet !-->
+<!--% Décrivez ce graphique. Soyez complet ! -->
 
-## Conclusion
 
-<!--% Selon vous, est-ce que ce modèle représente correctement vos données. Répondez en 4 à 6 lignes. Énoncez éventuellement des pistes d'amélioration du modèle. --> 
+## Discussion et conclusion
+
+<!--% Selon vous, est-ce que ce modèle représente correctement vos données. Répondez en 4 à 6 lignes. Énoncez éventuellement des pistes d'amélioration du modèle dans vos conclusions. --> 
 
